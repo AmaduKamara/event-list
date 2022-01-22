@@ -77,7 +77,7 @@ function App() {
             className="text-gray-800 focus:outline-none mx-10 hover:text-sky-500 animate-bounce"
             onClick={() => setShowEvents(true)}
           >
-            Show Event
+            Show Events
           </button>
         </div>
       )}
@@ -88,7 +88,7 @@ function App() {
             className="text-gray-800 focus:outline-none mx-10 hover:text-sky-500 animate-bounce"
             onClick={() => setShowEvents(false)}
           >
-            Hide Event
+            Hide Events
           </button>
         </div>
       )}

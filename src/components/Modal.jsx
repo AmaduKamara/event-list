@@ -1,4 +1,4 @@
-import React from "react";
+import ReactDOM from "react-dom";
 
 export default function Modal({ handleCloseModal }) {
   const eventTypes = [
@@ -14,7 +14,7 @@ export default function Modal({ handleCloseModal }) {
     { id: 10, type: "Hiking" },
     { id: 11, type: "Swimming" },
   ];
-  return (
+  return ReactDOM.createPortal(
     <div
       className="fixed z-10 inset-0 overflow-y-auto w-screen flex justify-center items-center"
       aria-labelledby="modal-title"
@@ -99,6 +99,7 @@ export default function Modal({ handleCloseModal }) {
           </form>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 }
