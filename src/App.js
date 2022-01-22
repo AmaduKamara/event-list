@@ -57,11 +57,29 @@ function App() {
   return (
     <div>
       <Hero />
-      {events ? (
+      <div className="text-center mt-10">
+        <button
+          type="button"
+          className="text-gray-800 focus:outline-none mx-10"
+          onClick={() => setShowEvent(true)}
+        >
+          Show Event
+        </button>
+        <button
+          type="button"
+          className="text-gray-800 focus:outline-none mx-10"
+          onClick={() => setShowEvent(false)}
+        >
+          Hide Event
+        </button>
+      </div>
+      {showEvent && events ? (
         <EventList events={events} handleDelete={handleDelete} />
       ) : (
-        <div>
-          <h3 className="text-center text-4xl">No Event available</h3>
+        <div className="mt-16">
+          <h3 className="text-center text-4xl text-gray-400">
+            No event available
+          </h3>
         </div>
       )}
     </div>
