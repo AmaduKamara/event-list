@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Modal from "./components/Modal";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
   const [showEvents, setShowEvents] = useState(true);
   const [events, setEvents] = useState([
     {
@@ -55,9 +56,20 @@ function App() {
     console.log(id);
   };
 
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  const handleShowModal = () => {
+    setShowModal(true);
+  }
+
+  console.log(showModal);
+
   return (
     <div>
       <Hero />
+      {showModal && <Modal handleCloseModal={handleCloseModal} />}
       {!showEvents && (
         <div className="text-center mt-10">
           <button
@@ -81,7 +93,11 @@ function App() {
         </div>
       )}
       {showEvents && events ? (
-        <EventList events={events} handleDelete={handleDelete} />
+        <EventList
+          handleShowModal={handleShowModal}
+          events={events}
+          handleDelete={handleDelete}
+        />
       ) : (
         <div className="mt-16">
           <h3 className="text-center text-4xl text-gray-400">
@@ -89,7 +105,6 @@ function App() {
           </h3>
         </div>
       )}
-      <Modal />
     </div>
   );
 }
