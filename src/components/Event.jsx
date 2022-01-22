@@ -5,7 +5,7 @@ export default function Event({ event, handleDelete }) {
     handleDelete(id);
   };
   return (
-    <div className="p-4 shadow mb-5 border-l-4 rounded-lg border-sky-700 mx-4">
+    <div className="p-4 shadow-xl mb-8 border border-l-4 rounded-lg border-l-sky-700 mx-4">
       <div className="flex justify-between">
         <p className="text-gray-400 uppercase text-xs">{event.category}</p>
         <p className="text-sky-400 uppercase">{event.date}</p>
