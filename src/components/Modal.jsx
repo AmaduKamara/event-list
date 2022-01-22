@@ -1,7 +1,7 @@
 import ReactDOM from "react-dom";
 import EventForm from "./EventForm";
 
-export default function Modal({ handleCloseModal }) {
+export default function Modal({ handleCloseModal, addEvent }) {
   const eventTypes = [
     { id: 1, type: "Birthday" },
     { id: 2, type: "Wedding" },
@@ -44,6 +44,7 @@ export default function Modal({ handleCloseModal }) {
           <EventForm
             eventTypes={eventTypes}
             handleCloseModal={handleCloseModal}
+            addEvent={addEvent}
           />
         </div>
       </div>
