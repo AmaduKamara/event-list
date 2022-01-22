@@ -10,7 +10,10 @@ Event List - An app that list one's future events, date, location, category and 
 
 ## App screenshots
 
-![image](https://user-images.githubusercontent.com/50941074/150619678-0aa5d6d1-6190-4ae9-9789-d25e83bcce8b.png)
+![image](https://user-images.githubusercontent.com/50941074/150641130-9e26ac9a-6c26-419f-b08d-e0f03c2c5248.png)
+
+![image](https://user-images.githubusercontent.com/50941074/150641150-140bee59-d994-463c-8718-4e695eb06372.png)
+
 
 ## Built with:
 
