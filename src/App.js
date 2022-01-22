@@ -3,7 +3,7 @@ import EventList from "./components/EventList";
 import Hero from "./components/Hero";
 
 function App() {
-  const [showEvent, setShowEvent] = useState(true);
+  const [showEvents, setShowEvents] = useState(true);
   const [events, setEvents] = useState([
     {
       id: 1,
@@ -57,23 +57,29 @@ function App() {
   return (
     <div>
       <Hero />
-      <div className="text-center mt-10">
-        <button
-          type="button"
-          className="text-gray-800 focus:outline-none mx-10"
-          onClick={() => setShowEvent(true)}
-        >
-          Show Event
-        </button>
-        <button
-          type="button"
-          className="text-gray-800 focus:outline-none mx-10"
-          onClick={() => setShowEvent(false)}
-        >
-          Hide Event
-        </button>
-      </div>
-      {showEvent && events ? (
+      {!showEvents && (
+        <div className="text-center mt-10">
+          <button
+            type="button"
+            className="text-gray-800 focus:outline-none mx-10"
+            onClick={() => setShowEvents(true)}
+          >
+            Show Event
+          </button>
+        </div>
+      )}
+      {showEvents && (
+        <div className="text-center mt-10">
+          <button
+            type="button"
+            className="text-gray-800 focus:outline-none mx-10"
+            onClick={() => setShowEvents(false)}
+          >
+            Hide Event
+          </button>
+        </div>
+      )}
+      {showEvents && events ? (
         <EventList events={events} handleDelete={handleDelete} />
       ) : (
         <div className="mt-16">
