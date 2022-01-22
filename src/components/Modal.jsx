@@ -32,7 +32,7 @@ export default function Modal({ handleCloseModal, addEvent }) {
       ></div>
       <div className="py-6 inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle w-1/3">
         <div className="border-b-2 pb-4 px-6">
-          <h2 className="text-xl font-semibold">Modal Title</h2>
+          <h2 className="text-xl font-semibold">New Event</h2>
           <button
             className="absolute top-5 right-6 text-xl hover:text-red-300"
             onClick={handleCloseModal}
