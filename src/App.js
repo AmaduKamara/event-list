@@ -1,6 +1,7 @@
 import { useState } from "react";
 import EventList from "./components/EventList";
 import Hero from "./components/Hero";
+import Modal from "./components/Modal";
 
 function App() {
   const [showEvents, setShowEvents] = useState(true);
@@ -88,6 +89,7 @@ function App() {
           </h3>
         </div>
       )}
+      <Modal />
     </div>
   );
 }
