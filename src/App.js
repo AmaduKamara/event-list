@@ -61,7 +61,7 @@ function App() {
         <div className="text-center mt-10">
           <button
             type="button"
-            className="text-gray-800 focus:outline-none mx-10 hover:text-sky-500"
+            className="text-gray-800 focus:outline-none mx-10 hover:text-sky-500 animate-bounce"
             onClick={() => setShowEvents(true)}
           >
             Show Event
@@ -72,7 +72,7 @@ function App() {
         <div className="text-center mt-10">
           <button
             type="button"
-            className="text-gray-800 focus:outline-none mx-10 hover:text-sky-500"
+            className="text-gray-800 focus:outline-none mx-10 hover:text-sky-500 animate-bounce"
             onClick={() => setShowEvents(false)}
           >
             Hide Event
