@@ -8,6 +8,9 @@ Event List - An app that list one's future events, date, location, category and 
 - Run `npm install`
 - Run `npm start`
 
+## App Live Demo Link
+<a href="amkam-event-list.netlify.app">Live Demo</a>
+
 ## App screenshots
 
 ![image](https://user-images.githubusercontent.com/50941074/150641353-ddd9ea33-81d9-40e0-aedd-364fb8a433f3.png)
