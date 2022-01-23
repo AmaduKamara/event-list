@@ -14,7 +14,7 @@ export default function Event({ event, handleDelete }) {
       <p>{event.description}</p>
       <div className="mt-4 flex justify-between items-end">
         <div>
-          <h4 className="text-lg">
+          <h4 className="md:text-lg">
             Location:{" "}
             <span className="font-semibold text-gray-500">
               {event.location}
