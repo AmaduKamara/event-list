@@ -65,7 +65,7 @@ function App() {
         />
       ) : (
         <div className="mt-16">
-          <h3 className="text-center text-4xl text-gray-400">
+          <h3 className="text-center text-lg md:text-4xl text-gray-400">
             No event available
           </h3>
         </div>

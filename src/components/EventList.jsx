@@ -8,7 +8,7 @@ export default function EventList({ events, handleDelete, handleShowModal }) {
         <div className="flex justify-center mb-6">
           <button
             onClick={handleShowModal}
-            className="py-3 px-8 bg-sky-500 hover:bg-sky-600 rounded shadow-lg text-sky-100 text-xl"
+            className="p-3 md:py-3 md:px-8 bg-sky-500 hover:bg-sky-600 rounded shadow-lg text-sky-100 md:text-xl"
           >
             Add Event
           </button>
